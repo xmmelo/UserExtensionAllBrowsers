@@ -1,0 +1,24 @@
+{
+    "description": "Listen to login input",
+    "manifest_version": 2,
+    "name": "UserExtension",
+    "version": "1.0",
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
+  
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["core.js"]
+      }
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+      },
+
+      "permissions": [
+        "storage"
+      ],
+      
+    "web_accessible_resources": ["script.js"]
+}
